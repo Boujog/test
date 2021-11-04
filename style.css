@@ -1,0 +1,6 @@
+body{
+ @font-face {
+   font-family: 'Lato-Black';
+   src: url("https://fonts.google.com/specimen/Lato");
+ }
+}
