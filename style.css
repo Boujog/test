@@ -1,29 +1,11 @@
 body{
   font-family: Lato;
   background-color: aqua;
+  text-align: center;
 }
 .container{
-  width: 70%;
-
+  margin: 20px;
 }
-.btnGame,
-.btnHold,
-.btnRoll{
+div{
   text-align: center;
-  text-overflow: clip;
-}
-.btnGame{
-text-align: center;
-}
-.btnHold{
-
-}
-.btnRoll{
-
-}
-.firstPlayer{
-
-}
-.secondPlayer{
-
 }
