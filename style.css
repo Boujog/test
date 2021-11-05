@@ -1,6 +1,29 @@
 body{
- @font-face {
-   font-family: 'Lato-Black';
-   src: url("https://fonts.google.com/specimen/Lato");
- }
+  font-family: Lato;
+  background-color: aqua;
+}
+.container{
+  width: 70%;
+
+}
+.btnGame,
+.btnHold,
+.btnRoll{
+  text-align: center;
+  text-overflow: clip;
+}
+.btnGame{
+text-align: center;
+}
+.btnHold{
+
+}
+.btnRoll{
+
+}
+.firstPlayer{
+
+}
+.secondPlayer{
+
 }

@@ -1,2 +1,3 @@
-const getRandomNumber = (min, max) => { return Math.floor(Math.random() * (max - min + 1)) + min;};
-const rollDice = () => getRandomNumber(1, 6);
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
