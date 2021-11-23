@@ -1,5 +1,12 @@
+// global Var for Play 
+  //Players
+var player1 = prompt("what is your name, player 1?");
+var player2 = prompt("what is your name, player 2?");
+  //Score
+var score1 = 0;
+var score2 = 0;
 
-const lancerDe = function() {
+const rollDice = function() {
 
   const nombreDecimal =(Math.random() * 6) + 1
   
@@ -17,12 +24,7 @@ const deTexte = {
   '6' : 'Six',
 }
 
-
-const resultat = lancerDe()
-
-prompt("what is yout name ?");
-var playerFirst = prompt("Please enter your name", "");
-if (playerFirst!= null) {
-    document.getElementById("welcome").innerHTML ="Hello " + playerFirst + "! How are you today?";
-}
-console.log(playerFirst)
+console.log(player1);
+console.log(player2);
+console.log(score1);
+console.log(score2);
