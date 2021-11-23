@@ -12,8 +12,9 @@ function rollDice() {
   const nombreDecimal =(Math.random() * 6) + 1
   
   const nombre = Math.trunc(nombreDecimal)
-
+  
   return nombre
+  document.getElementById("diceRoll").innerHTML = 
 }
  //Dice number return
 const deTexte = {
