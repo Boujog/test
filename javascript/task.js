@@ -1,3 +1,4 @@
+
 const lancerDe = function() {
 
   const nombreDecimal =(Math.random() * 6) + 1
@@ -18,4 +19,10 @@ const deTexte = {
 
 
 const resultat = lancerDe()
-console.log(resultat)
+
+prompt("what is yout name ?");
+var playerFirst = prompt("Please enter your name", "");
+if (playerFirst!= null) {
+    document.getElementById("welcome").innerHTML ="Hello " + playerFirst + "! How are you today?";
+}
+console.log(playerFirst)
