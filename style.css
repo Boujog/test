@@ -1,11 +1,24 @@
 body{
   font-family: Lato;
-  background-color: aqua;
+  color: antiquewhite;
+  size-adjust: 100%;
+  background-color: black;
   text-align: center;
-}
-.container{
-  margin: 20px;
 }
 div{
   text-align: center;
+}
+.container{
+  max-width: 80%;
+  height: 600px;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url("./image/spotLightFont.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.diceStyle{
+  width: 80px;
+  height: 80px;
 }
