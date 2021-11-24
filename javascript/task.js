@@ -14,7 +14,8 @@ function rollDice() {
   const nombre = Math.trunc(nombreDecimal)
   
   return nombre
-  document.getElementById("diceRoll").innerHTML = 
+  
+  document.getElementById("diceRoll").innerHTML = nombre
 }
  //Dice number return
 const deTexte = {
