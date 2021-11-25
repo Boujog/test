@@ -1,13 +1,3 @@
-body{
-  font-family: Lato;
-  color: antiquewhite;
-  size-adjust: 100%;
-  background-color: black;
-  text-align: center;
-}
-div{
-  text-align: center;
-}
   body{
   background-image: url("./image/spotLightFont.jpg");
   background-size: cover;
@@ -16,7 +6,22 @@ div{
   font-weight: 300;
   color: bisque;
  }
+.wrapper{
+  width: 1000px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: mediumblue;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+}
+
 .diceStyle{
   width: 80px;
   height: 80px;
+}
+img{
+  width: 100px;
+  height: 100px;
 }
