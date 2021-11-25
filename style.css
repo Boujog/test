@@ -47,10 +47,7 @@ margin-bottom: 130px;
 }
 /*/////////////// Button ////////////*/
 button{
-  position:absolute;
   width: 200px;
-  left: 50%;
-  transform: translateX(-50%);
   background: none;
   border: none;
   font-size: 20px;
@@ -69,4 +66,15 @@ button{
 img{
   width: 100px;
   height: 100px;
+}
+.diceGame{
+  top: 180px;
+  height: 100px;
+  box-shadow: 10px 10px 10px black;
+}
+/* //////// Classe Multiple /////////*/
+.centerPlace{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
