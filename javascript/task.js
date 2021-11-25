@@ -24,7 +24,6 @@ var score2 = 0;
     }else{
         status.innerHTML += "Turn Over Next Player !"
     }
-  
   }
  //Dice number return
 const deTexte = {
