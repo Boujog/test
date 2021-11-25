@@ -1,9 +1,11 @@
-  body{
+ /* /////// Body and Container ////////*/
+ body{
   background-image: url("./image/spotLightFont.jpg");
   background-size: cover;
   background-position: center;
   font-family: lato;
   font-weight: 300;
+  height: 100vh;
   color: bisque;
  }
 .wrapper{
@@ -15,12 +17,55 @@
   background-color: mediumblue;
   box-shadow: 10px 10px 10px black;
   overflow: hidden;
+  opacity: 0.7;
 }
-
-.diceStyle{
-  width: 80px;
-  height: 80px;
+/* Party Game Player*/
+.playerOneParty,
+.playerTwoParty{
+  width: 50%;
+  float: left;
+  height: 600px;
+  padding: 100px;
 }
+.playerScore{
+font-size: 60px;
+color: crimson;
+margin-bottom: 130px;
+}
+.playerCurrent{
+  background-color: cadetblue;
+  width: 40%;
+  margin: auto;
+  padding: 12px;
+}
+.font100{
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.textCenter{
+  text-align: center;
+}
+/*/////////////// Button ////////////*/
+button{
+  position:absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btnNewGame{
+  top: 50px;
+}
+.btnRollDice{
+  top: 450px;
+}
+.btnHold{
+  top: 500px;
+}
+/*/////////////// Dice Image ////////*/
 img{
   width: 100px;
   height: 100px;
