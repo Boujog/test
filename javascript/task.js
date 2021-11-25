@@ -1,12 +1,9 @@
 // global Var for Play 
- /* //Players 
-var player1 = prompt("what is your name, player 1?");
-var player2 = prompt("what is your name, player 2?");
- */
-/* //Score 
-var score1 = 100;
-var score2 = 0;
- */
+
+
+var score = 0;
+var roundscore
+ 
   //Dice random
   function rollDice() {
     var die1 = document.getElementById("die1");

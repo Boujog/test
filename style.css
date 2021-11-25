@@ -8,16 +8,14 @@ body{
 div{
   text-align: center;
 }
-.container{
-  max-width: 80%;
-  height: 600px;
-  margin: auto;
-  margin-top: 50px;
+  body{
   background-image: url("./image/spotLightFont.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-size:contain;
-}
+  font-family: lato;
+  font-weight: 300;
+  color: bisque;
+ }
 .diceStyle{
   width: 80px;
   height: 80px;
