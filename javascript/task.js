@@ -8,7 +8,6 @@ var score1 = 100;
 var score2 = 0;
  */
   //Dice random
-  /*
   function rollDice() {
     var die1 = document.getElementById("die1");
     var status = document.getElementById("status");
@@ -16,41 +15,16 @@ var score2 = 0;
     var diceTotal = d1 ;
     die1.innerHTML = d1;
     status.innerHTML = "You rolled " + diceTotal+".";
-    if(d1 == 1) {
-        status.innerHTML += "Sorry! You turn is over!!";
-    } else if (d1 === 3) {
-        status.innerHTML += "half life 3 confirmed";
+    if((d1 === 2) || (d1 ===3)) {
+        status.innerHTML += "Yes! Not Bad!!";
+    } else if ((d1 === 4) || (d1 === 5)) {
+        status.innerHTML += "Good More Is Perfect";
     }else if (d1 === 6) {
-        status.innerHTML += "Lucky! Take the big Roll"
+        status.innerHTML += "Lucky! You Take The Big Deal!"
+    }else{
+        status.innerHTML += "Turn Over Next Player !"
     }
   
-  }
- */
-  function rollDice() {
-    var die1 = document.getElementById("die1");
-    var status = document.getElementById("status");
-    var d1 = Math.floor(Math.random() * 6) + 1;
-    var diceTotal = d1 ;
-    die1.innerHTML = d1;
-    status.innerHTML = "You rolled " + diceTotal+".";
-    switch(diceTotal) {
-      case "2":
-        status.innerHTML += "you short!!";
-      break;
-      case "3":
-        status.innerHTML += "not bad";
-      break;
-      case "4":
-        status.innerHTML += "good";
-      break;
-      case "5":
-        status.innerHTML += "good";
-      break;
-      case "6":
-        status.innerHTML += "Lucky!";
-      break;
-      default:
-        status.innerHTML += "Sorry! You turn is over!!";
   }
  //Dice number return
 const deTexte = {
