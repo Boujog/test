@@ -33,10 +33,11 @@ color: crimson;
 margin-bottom: 130px;
 }
 .playerCurrent{
-  background-color: cadetblue;
+  background-color: rgb(26, 57, 235);
   width: 40%;
   margin: auto;
   padding: 12px;
+  text-transform: uppercase;
 }
 .font100{
   font-weight: 100;
@@ -62,6 +63,14 @@ button{
 .btnHold{
   top: 500px;
 }
+ion-icon{
+  color: crimson;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 2em;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
 /*/////////////// Dice Image ////////*/
 img{
   width: 100px;
@@ -69,7 +78,6 @@ img{
 }
 .diceGame{
   top: 180px;
-  height: 100px;
   box-shadow: 10px 10px 10px black;
 }
 /* //////// Classe Multiple /////////*/
