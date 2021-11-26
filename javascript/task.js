@@ -56,16 +56,43 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 });
 
 
-// Win or Lose
-function theWinner() {
-  if(score1>=100){
-    console.log('${player1} win the game!')
-  }else if(score2>=100){
-    console.log('${player2} win the game!')
-  }else{
-    console.log('Continue the Game')
-  }
+////
+function nextPlayer() {
+  //Next player
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+  roundScore = 0;
+
+  document.getElementById('current_0').textContent = '0';
+  document.getElementById('current_1').textContent = '0';
+
+  document.querySelector('.player_0_Party').classList.toggle('active');
+  document.querySelector('.player_1_Party').classList.toggle('active');
+
+  //document.querySelector('.player-0-panel').classList.remove('active');
+  //document.querySelector('.player-1-panel').classList.add('active');
+
+  document.querySelector('.dice').style.display = 'none';
 }
+
+
+
+function nextPlayer() {
+  //Next player
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+  roundScore = 0;
+
+  document.getElementById('current_0').textContent = '0';
+  document.getElementById('current_1').textContent = '0';
+
+  document.querySelector('.player_0_Party').classList.toggle('active');
+  document.querySelector('.player_0_Party').classList.toggle('active');
+
+  //document.querySelector('.player-0-panel').classList.remove('active');
+  //document.querySelector('.player-1-panel').classList.add('active');
+
+  document.querySelector('.dice').style.display = 'none';
+}
+
 //New Game Start//
 document.querySelector('.btnNewGame').addEventListener('click', init);
 
