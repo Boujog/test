@@ -23,21 +23,8 @@ var roundscore
     }
   }
  //Dice number return
-const deTexte = {
-  '1' : 'Un',
-  '2' : 'Deux',
-  '3' : 'Trois',
-  '4' : 'Quatre',
-  '5' : 'Cinq',
-  '6' : 'Six',
-}
 
 //Tirage de dés images
-function frontDice(){
-  if(number1 == 1){
-    
-  }
-}
 
 // Win or Lose
 function theWinner() {
@@ -49,3 +36,5 @@ function theWinner() {
     console.log('Continue the Game')
   }
 }
+//New Game Start//
+document.querySelector('.btnNewGame').addEventListener('click', init);
