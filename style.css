@@ -71,6 +71,9 @@ ion-icon{
   line-height: 1;
   vertical-align: text-bottom;
 }
+button:hover{
+  color: blueviolet;
+}
 /*/////////////// Dice Image ////////*/
 img{
   width: 100px;
