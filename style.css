@@ -20,8 +20,8 @@
   opacity: 0.7;
 }
 /* Party Game Player*/
-.playerOneParty,
-.playerTwoParty{
+.player_0_Party,
+.player_1_Party{
   width: 50%;
   float: left;
   height: 600px;
