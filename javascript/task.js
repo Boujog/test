@@ -2,29 +2,37 @@
 
 
 var score = 0;
-var roundscore
+var roundscore = 0;
+var activePlayer = 0;
+var gamePlaying = true;
+init();
  
   //Dice random
-  function rollDice() {
-    var die1 = document.getElementById("die1");
-    var status = document.getElementById("status");
-    var d1 = Math.floor(Math.random() * 6) + 1;
-    var diceTotal = d1 ;
-    die1.innerHTML = d1;
-    status.innerHTML = "You rolled " + diceTotal+".";
-    if((d1 === 2) || (d1 ===3)) {
-        status.innerHTML += "Yes! Not Bad!!";
-    } else if ((d1 === 4) || (d1 === 5)) {
-        status.innerHTML += "Good More Is Perfect";
-    }else if (d1 === 6) {
-        status.innerHTML += "Lucky! You Take The Big Deal!"
-    }else{
-        status.innerHTML += "Turn Over Next Player !"
-    }
-  }
- //Dice number return
+  document.querySelector('.btn-roll').addEventListener('click', function() {
+    if(gamePlaying) {
+        // 1. Random number
+        var dice = Math.floor(Math.random() * 6) + 1;
 
-//Tirage de dés images
+        //2. Display the result
+        var diceDOM = document.querySelector('.dice');
+        diceDOM.style.display = 'block';
+        diceDOM.src = 'dice-' + dice + '.png';
+
+
+        //3. Update the round score IF the rolled number was NOT a 1
+        if (dice !== 1) {
+            //Add score
+            roundScore += dice;
+            document.querySelector('#current-' + activePlayer).textContent = roundScore;
+        } else {
+            //Next player
+            nextPlayer();
+        }
+    }    
+});
+
+
+
 
 // Win or Lose
 function theWinner() {
@@ -38,3 +46,12 @@ function theWinner() {
 }
 //New Game Start//
 document.querySelector('.btnNewGame').addEventListener('click', init);
+
+function init(){
+  score=[0, 0];
+  activeScore = 0;
+  currentScore = 0;
+  gameStarted = true;
+
+  document.querySelector('.')
+}
