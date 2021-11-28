@@ -36,14 +36,14 @@ document.querySelector('.btnHold').addEventListener('click', function() {
       scores[activePlayer] += roundScore;
 
       // Update the UI
-      document.querySelector('#score_' + activePlayer).textContent = scores[activePlayer];
+      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
       // Check if player won the game
       if (scores[activePlayer] >= 100) {
           document.querySelector('#name_' + activePlayer).textContent = 'Winner!';
           document.querySelector('.dice').style.display = 'none';
-          document.querySelector('.player_' + activePlayer + '_Party').classList.add('winner');
-          document.querySelector('.player_' + activePlayer + '_Party').classList.remove('active');
+          document.querySelector('.player-' + activePlayer + '-Party').classList.add('winner');
+          document.querySelector('.player-' + activePlayer + '-Party').classList.remove('active');
           gamePlaying = false;
       } else {
           //Next player
@@ -59,11 +59,11 @@ function nextPlayer() {
   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
   roundScore = 0;
 
-  document.getElementById('current_0').textContent = '0';
-  document.getElementById('current_1').textContent = '0';
+  document.getElementById('current-0').textContent = '0';
+  document.getElementById('current-1').textContent = '0';
 
-  document.querySelector('.player_0_Party').classList.toggle('active');
-  document.querySelector('.player_1_Party').classList.toggle('active');
+  document.querySelector('.player-0-Party').classList.toggle('active');
+  document.querySelector('.player-1-Party').classList.toggle('active');
 
   //document.querySelector('.player-0-panel').classList.remove('active');
   //document.querySelector('.player-1-panel').classList.add('active');
@@ -78,11 +78,11 @@ function nextPlayer() {
   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
   roundScore = 0;
 
-  document.getElementById('current_0').textContent = '0';
-  document.getElementById('current_1').textContent = '0';
+  document.getElementById('current-0').textContent = '0';
+  document.getElementById('current-1').textContent = '0';
 
-  document.querySelector('.player_0_Party').classList.toggle('active');
-  document.querySelector('.player_0_Party').classList.toggle('active');
+  document.querySelector('.player-0-Party').classList.toggle('active');
+  document.querySelector('.player-1-Party').classList.toggle('active');
 
   //document.querySelector('.player-0-panel').classList.remove('active');
   //document.querySelector('.player-1-panel').classList.add('active');
@@ -102,15 +102,15 @@ function init(){
   document.querySelector('.dice').style.display = 'none';
 
   
-  document.getElementById('score_0').textContent = '0';
-  document.getElementById('score_1').textContent = '0';
-  document.getElementById('current_0').textContent = '0';
-  document.getElementById('current_1').textContent = '0';
-  document.getElementById('name_0').textContent = 'Player 1';
-  document.getElementById('name_1').textContent = 'Player 2';
-  document.querySelector('.player_0_Party').classList.remove('winner');
-  document.querySelector('.player_1_Party').classList.remove('winner');
-  document.querySelector('.player_0_Party').classList.remove('active');
-  document.querySelector('.player_1_Party').classList.remove('active');
-  document.querySelector('.player_0_Party').classList.add('active');
+  document.getElementById('score-0').textContent = '0';
+  document.getElementById('score-1').textContent = '0';
+  document.getElementById('current-0').textContent = '0';
+  document.getElementById('current-1').textContent = '0';
+  document.getElementById('name-0').textContent = 'Player 1';
+  document.getElementById('name-1').textContent = 'Player 2';
+  document.querySelector('.player-0-Party').classList.remove('winner');
+  document.querySelector('.player-1-Party').classList.remove('winner');
+  document.querySelector('.player-0-Party').classList.remove('active');
+  document.querySelector('.player-1-Party').classList.remove('active');
+  document.querySelector('.player-0-Party').classList.add('active');
 }
