@@ -6,7 +6,7 @@ var scores, roundScore, activePlayer, gamePlaying;
 init();
  
   //Dice random
-  document.querySelector('.btnRollDice').addEventListener('click', function() {
+  document.querySelector('.btn-RollDice').addEventListener('click', function() {
     if(gamePlaying) {
         // 1. Random number
         var dice = Math.floor(Math.random() * 6) + 1;
@@ -31,7 +31,7 @@ init();
 
 
 
-document.querySelector('.btnHold').addEventListener('click', function() {
+document.querySelector('.btn-Hold').addEventListener('click', function() {
   if (gamePlaying) {
       // Add CURRENT score to GLOBAL score
       scores[activePlayer] += roundScore;
@@ -71,7 +71,7 @@ function nextPlayer() {
 }
 
 //New Game Start//
-document.querySelector('.btnNewGame').addEventListener('click', init);
+document.querySelector('.btn-NewGame').addEventListener('click', init);
 
 function init() {
   scores = [0, 0];

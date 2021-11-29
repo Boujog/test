@@ -56,7 +56,7 @@ font-size: 60px;
 color: crimson;
 margin-bottom: 130px;
 }
-.active { background-color: #f7f7f7; 
+.active { background-color: #1da7e7; 
 }
 .active .player-name { font-weight: 300; 
 }
@@ -81,6 +81,12 @@ margin-bottom: 130px;
   font-size: 12px;
   color: #222;
 }
+
+
+.player-current-score {
+  font-size: 30px;
+}
+
 .font100{
   font-weight: 100;
   text-transform: uppercase;
@@ -96,14 +102,15 @@ button{
   font-size: 20px;
   cursor: pointer;
 }
-.btnNewGame{
-  top: 50px;
+button:hover{
+  color: blueviolet;
+  font-weight: 600;
 }
-.btnRollDice{
-  top: 450px;
+button:hover svg { 
+  margin-right: 20px; 
 }
-.btnHold{
-  top: 500px;
+button:focus {
+  outline: none;
 }
 path{
   color: crimson;
@@ -115,22 +122,21 @@ path{
   margin-top: -4px;
   transition: margin 0.3s;
 }
-button:hover{
-  color: blueviolet;
+.btn-NewGame{
+  top: 50px;
 }
-button:hover svg { 
-  margin-right: 20px; 
+.btn-RollDice{
+  top: 450px;
 }
-button:focus {
-  outline: none;
+.btn-Hold{
+  top: 500px;
 }
 /*/////////////// Dice Image ////////*/
-img{
+.dice{
+  position: absolute;
+  top: 180px;
   width: 100px;
   height: 100px;
-}
-.dice{
-  top: 180px;
   box-shadow: 10px 10px 10px black;
 }
 /* //////// Classe Multiple /////////*/
@@ -138,4 +144,8 @@ img{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+.winner { background-color: #f7f7f7;
+ }
+.winner .player-name { font-weight: 300; color: #EB4D4D; 
 }
