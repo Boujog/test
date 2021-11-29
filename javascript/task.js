@@ -1,7 +1,8 @@
 // global Var for Play 
 
 
-var score, roundScore, activePlayer, gamePlaying; 
+var scores, roundScore, activePlayer, gamePlaying;
+
 init();
  
   //Dice random
@@ -72,8 +73,8 @@ function nextPlayer() {
 //New Game Start//
 document.querySelector('.btnNewGame').addEventListener('click', init);
 
-function init(){
-  score=[0, 0];
+function init() {
+  scores = [0, 0];
   activeScore = 0;
   currentScore = 0;
   gameStarted = true;
