@@ -20,19 +20,19 @@
   opacity: 0.7;
 }
 /* Party Game Player*/
-.player-0-Party,
-.player-1-Party{
+.player-0-party,
+.player-1-party{
   width: 50%;
   float: left;
   height: 600px;
   padding: 100px;
 }
-.playerScore{
+.player-score{
 font-size: 60px;
 color: crimson;
 margin-bottom: 130px;
 }
-.playerCurrent{
+.player-current{
   background-color: rgb(26, 57, 235);
   width: 40%;
   margin: auto;
