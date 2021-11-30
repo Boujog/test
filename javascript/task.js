@@ -6,7 +6,7 @@ var scores, roundScore, activePlayer, gamePlaying;
 init();
  
   //Dice random
-  document.querySelector('.btn-RollDice').addEventListener('click', function() {
+  document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
         // 1. Random number
         var dice = Math.floor(Math.random() * 6) + 1;
@@ -14,7 +14,7 @@ init();
         //2. Display the result
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'dice-' + dice + '.png';
+        diceDOM.src = 'image/dice-' + dice + '.png';
 
 
         //3. Update the round score IF the rolled number was NOT a 1
@@ -31,7 +31,7 @@ init();
 
 
 
-document.querySelector('.btn-Hold').addEventListener('click', function() {
+document.querySelector('.btn-hold').addEventListener('click', function() {
   if (gamePlaying) {
       // Add CURRENT score to GLOBAL score
       scores[activePlayer] += roundScore;
@@ -42,7 +42,7 @@ document.querySelector('.btn-Hold').addEventListener('click', function() {
       // Check if player won the game
       if (scores[activePlayer] >= 100) {
           document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
-          document.querySelector('.dice').style.display = 'none';
+          document.querySelector('.dice').style.display = 'block';
           document.querySelector('.player-' + activePlayer + '-party').classList.add('winner');
           document.querySelector('.player-' + activePlayer + '-party').classList.remove('active');
           gamePlaying = false;
@@ -67,11 +67,11 @@ function nextPlayer() {
   //document.querySelector('.player-0-panel').classList.remove('active');
   //document.querySelector('.player-1-panel').classList.add('active');
 
-  document.querySelector('.dice').style.display = 'none';
+  document.querySelector('.dice').style.display = 'block';
 }
 
 //New Game Start//
-document.querySelector('.btn-NewGame').addEventListener('click', init);
+document.querySelector('.btn-new').addEventListener('click', init);
 
 function init() {
   scores = [0, 0];
@@ -79,7 +79,7 @@ function init() {
   currentScore = 0;
   gameStarted = true;
 
-  document.querySelector('.dice').style.display = 'none';
+  document.querySelector('.dice').style.display = 'block';
 
   
   document.getElementById('score-0').textContent = '0';

@@ -52,6 +52,7 @@
   position: relative;
 }
 .player-score{
+text-align: center;
 font-size: 60px;
 color: crimson;
 margin-bottom: 130px;
@@ -73,6 +74,7 @@ margin-bottom: 130px;
   width: 40%;
   margin: 0 auto;
   padding: 12px;
+  text-align: center;
 }
 
 .player-current-label {
@@ -81,21 +83,14 @@ margin-bottom: 130px;
   font-size: 12px;
   color: #222;
 }
-
-
 .player-current-score {
   font-size: 30px;
 }
-
-.font100{
-  font-weight: 100;
-  text-transform: uppercase;
-}
-.textCenter{
-  text-align: center;
-}
 /*/////////////// Button ////////////*/
 button{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   background: none;
   border: none;
@@ -122,29 +117,26 @@ path{
   margin-top: -4px;
   transition: margin 0.3s;
 }
-.btn-NewGame{
+.btn-new{
   top: 50px;
 }
-.btn-RollDice{
+.btn-roll{
   top: 450px;
 }
-.btn-Hold{
+.btn-hold{
   top: 500px;
 }
 /*/////////////// Dice Image ////////*/
 .dice{
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   top: 180px;
   width: 100px;
   height: 100px;
   box-shadow: 10px 10px 10px black;
 }
 /* //////// Classe Multiple /////////*/
-.centerPlace{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
 .winner { background-color: #f7f7f7;
  }
 .winner .player-name { font-weight: 300; color: #EB4D4D; 
