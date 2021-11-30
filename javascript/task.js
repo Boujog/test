@@ -75,9 +75,9 @@ document.querySelector('.btn-new').addEventListener('click', init);
 
 function init() {
   scores = [0, 0];
-  activeScore = 0;
-  currentScore = 0;
-  gameStarted = true;
+  activePlayer = 0;
+  roundScore = 0;
+  gamePlaying = true;
 
   document.querySelector('.dice').style.display = 'block';
 
